@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 export function Menu(){
     return (
         <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
@@ -11,14 +13,13 @@ export function Menu(){
                 </button>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ms-auto py-4 py-lg-0">
-                        <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a>
+                        <li className="nav-item">
+                            <NavLink className="nav-link px-lg-3 py-3 py-lg-4" exact to="/">Home</NavLink>
                         </li>
-                        <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4"
-                                                    href="about.html">About</a></li>
-                        <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample
-                            Post</a></li>
-                        <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4"
-                                                    href="contact.html">Contact</a></li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link px-lg-3 py-3 py-lg-4" to="about">About</NavLink></li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link px-lg-3 py-3 py-lg-4" to="contact">Contact</NavLink></li>
                     </ul>
                 </div>
             </div>
