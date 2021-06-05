@@ -6,6 +6,7 @@ import {Menu} from "./components/Menu";
 import {PageHeader} from "./components/PageHeader";
 import {Footer} from "./components/Footer";
 import {Post} from "./components/Post";
+import {AddPost} from "./components/AddPost";
 function App() {
   return (
     <div>
@@ -14,6 +15,7 @@ function App() {
             <PageHeader/>
             <Route exact path="/" component={()=><Main/>}/>
             <Route path="/post" component={()=><Post/>}/>
+            <Route path="/addPost" component={()=><AddPost/>}/>
             <Route path="/about">
                 <About/>
             </Route>
