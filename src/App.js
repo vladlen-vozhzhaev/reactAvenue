@@ -5,15 +5,15 @@ import {Contact} from "./components/Contact";
 import {Menu} from "./components/Menu";
 import {PageHeader} from "./components/PageHeader";
 import {Footer} from "./components/Footer";
+import {Post} from "./components/Post";
 function App() {
   return (
     <div>
         <BrowserRouter>
             <Menu/>
             <PageHeader/>
-            <Route exact path="/">
-                <Main/>
-            </Route>
+            <Route exact path="/" component={()=><Main/>}/>
+            <Route path="/post" component={()=><Post/>}/>
             <Route path="/about">
                 <About/>
             </Route>
