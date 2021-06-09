@@ -1,8 +1,8 @@
 import React from "react";
 
 export class Post extends React.Component{
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             content: ""
         }
@@ -16,6 +16,7 @@ export class Post extends React.Component{
             body: formData
         }).then(response=>response.json())
             .then(result=>{
+                this.props.handlerChangeTitle(result.title);
                 this.setState({
                     content: result.content
                 })

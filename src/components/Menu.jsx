@@ -4,7 +4,7 @@ export function Menu(){
     return (
         <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div className="container px-4 px-lg-5">
-                <a className="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a className="navbar-brand" href="/">Start Bootstrap</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                         aria-label="Toggle navigation">
